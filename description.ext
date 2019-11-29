@@ -1,0 +1,99 @@
+/*           INFO            */
+
+/*=================== O N L Y   E D I T   B E T W E E N   T H E S E   L I N E S====================*/
+
+    dev                 = "SPC.MacMillan.M & SPC.Blake.H";
+    author              = "SPC.MacMillan.M & SPC.Blake.H";
+
+    onLoadName          = "BlackRock Campaign";
+    onLoadMission       = "The fight continues...";
+    onLoadIntro         = "Operation Sortie Mongoloid";
+
+    loadScreen          = "Data\helo.jpg";
+    overviewPicture     = "Data\helo.jpg";
+
+/*=================== D O   N O T   E D I T   B E L O W   T H E S E   L I N E S====================*/
+
+/*           RULES            */
+
+    cba_settings_hasSettingsFile = 1;
+    disabledAI              = true;
+    disableChannels[]       = {{0,false,true},{1,false,true},{2,true,true},{6,true,true}};
+
+    forceRotorLibSimulation = 1;
+
+/*     GARBADGE COLLECTIOR    */
+
+    corpseManagerMode = 3;
+    corpseLimit = 25;
+    corpseRemovalMinTime = 120;
+    corpseRemovalMaxTime = 7200;
+    minPlayerDistance = 500;
+
+/*          RESPAWN           */
+
+    // Name a marker "respawn_west" to set spawn.
+    // See https://community.bistudio.com/wiki/Arma_3_Respawn for more info on respawn.
+    respawn                = BASE;
+    respawnDelay           = 4;
+    //respawnDelay           = 30000;               // Enable for 1 life operations and disable the other.
+    respawnOnStart         = -1;
+    respawnTemplatesWest[] = {"MenuPosition"};
+	respawnTemplatesCiv[] = {"MenuPosition"};
+	respawnTemplatesGuer[] = {"MenuPosition"};
+    //respawnTemplates[] = {"ace_spectator"};       // Enable for 1 life operations and disable the other.
+
+/*          SYSTEMS           */
+
+    class Header
+    {
+        gameType = Coop;
+        minPlayers = 1;
+        maxPlayers = 30;
+     };
+
+    class Extended_PreInit_EventHandlers {
+        settings = call compile preprocessFileLineNumbers "simple_splint\functions\fn_initsettings.sqf";
+    };
+    class Extended_PostInit_EventHandlers {
+    };
+
+    class CfgFunctions {
+        #include "simple_splint\CfgFunctions.hpp"
+    };
+
+/*           OTHER            */
+
+class ACEX_Fortify_Presets {
+    class myMissionObjects {
+        objects[] = {
+            {"Land_Sign_MinesTall_Greek_F", 5},
+			{"FlagSmall_F", 5},
+			{"Land_fort_bagfence_long", 10},
+			{"Land_fort_bagfence_cornerg", 20},
+			{"Land_fort_bagfence_round", 20},
+			{"Land_BagBunker_Large_F", 65},
+			{"Land_BagBunker_Small_F", 40},
+			{"Land_Fort_Watchtower_EP1", 150},
+			{"Land_HBarrier_3_F", 15},
+			{"Land_HBarrier_1_F", 5},
+			{"Land_HBarrier_Big_F", 10},
+			{"Land_HbarrierWall_corridor_F", 80},
+			{"Land_HbarrierWall_corner_F", 65},
+			{"Land_HbarrierWall6_F", 90},
+			{"Land_HbarrierWall4_F", 60},
+			{"Land_HBarrierTower_F", 150},
+			{"Land_Razorwire_F", 20},
+			{"Land_DragonsTeeth_01_4x2_new_F", 80},
+			{"StorageBladder_01_fuel_forest_F", 500},
+			{"Land_SandbagBarricade_01_half_f", 10},
+			{"Land_SandbagBarricade_01_hole_f", 60},
+			{"and_SandbagBarricade_01_f", 40},
+			{"Land_Medevac_house_V1_F", 400},
+			{"Land_Cargo_house_V3_F", 400},
+			{"Land_Cargo_HQ_V3_F", 600},
+			{"Land_TentLamp_01_standing_F", 10},
+			{"Land_Camping_Light_F", 10},
+        };
+    };
+};

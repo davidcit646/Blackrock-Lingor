@@ -1,0 +1,1 @@
+CLIENT_RespawnLoadout = getUnitLoadout player;
