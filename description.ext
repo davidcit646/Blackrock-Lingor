@@ -2,8 +2,8 @@
 
 /*=================== O N L Y   E D I T   B E T W E E N   T H E S E   L I N E S====================*/
 
-    dev                 = "SPC.MacMillan.M & SPC.Blake.H";
-    author              = "SPC.MacMillan.M & SPC.Blake.H";
+    dev                 = "Blake,Citarelli,Mariani & ODoyle";
+    author              = "Blake,Citarelli,Mariani & ODoyle";
 
     onLoadName          = "BlackRock Campaign";
     onLoadMission       = "The fight continues...";
