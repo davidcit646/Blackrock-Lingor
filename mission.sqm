@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=2429;
+		nextID=2443;
 	};
 	class MarkerIDProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={10038.795,130.97766,9080.9873};
-		dir[]={-0.92122006,-0.37075904,0.11870775};
-		up[]={-0.3677766,0.92869234,0.047391716};
-		aside[]={0.12781443,-1.2541423e-006,0.99188679};
+		pos[]={9297.5615,15.498254,8731.8906};
+		dir[]={-0.58260059,-0.4482213,-0.67814481};
+		up[]={-0.29211482,0.89388484,-0.34001961};
+		aside[]={-0.75858748,-1.2545497e-006,0.65171045};
 	};
 };
 binarizationWanted=0;
@@ -527,7 +527,7 @@ class AddonsMetaData
 randomSeed=14144469;
 class ScenarioData
 {
-	author="Blake, Odoyle, Marniani, Citarelli";
+	author="Blake, ODoyle, Mariani, Citarelli";
 	overviewText="Presented by your friends at Blackrock!";
 	overviewTextLocked="Presented by your friends at Blackrock!";
 	overViewPicture="Data/helo.jpg";
@@ -7266,7 +7266,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="";
+							value="O_Serbia_Crew_01,O_Serbia_Pilot_01";
 						};
 					};
 				};
@@ -9208,7 +9208,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="Motorized";
+							value="Mechanized";
 						};
 					};
 				};
@@ -12363,7 +12363,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="Infantry";
+							value="Armored";
 						};
 					};
 				};
@@ -12568,7 +12568,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="0.2";
+							value="0.6";
 						};
 					};
 				};
@@ -128617,7 +128617,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={9112.1973,25.920444,9906.8115};
-				angles[]={-0,4.4900599,0};
+				angles[]={0,4.4900599,0};
 			};
 			side="Empty";
 			flags=4;
@@ -128634,7 +128634,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={9068.9688,17.816875,9091.2324};
-				angles[]={-0,0.7165969,-0};
+				angles[]={0,0.7165969,0};
 			};
 			side="Empty";
 			flags=4;
@@ -128736,7 +128736,7 @@ class Mission
 			fillName="DiagGrid";
 			a=8.7819996;
 			b=644.60498;
-			angle=180.13599;
+			angle=180.13596;
 			id=2409;
 			atlOffset=12.718474;
 		};
@@ -128765,7 +128765,7 @@ class Mission
 			fillName="DiagGrid";
 			a=8.7819996;
 			b=470.94135;
-			angle=113.83797;
+			angle=113.83795;
 			id=2411;
 			atlOffset=12.50169;
 		};
