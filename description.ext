@@ -13,7 +13,7 @@ onLoadIntro = "Operation Lingor Freedom";
 loadScreen = "Data\helo.jpg";
 overviewPicture = "Data\helo.jpg";
 
-// Rulesasdf
+// Rules
 cba_settings_hasSettingsFile = 1;
 disabledAI = true;
 disableChannels[] = {
