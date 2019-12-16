@@ -30,5 +30,6 @@ Player AddEventHandler[
 		];
 	}];
 execVM "alive\CustomFactions.sqf";
+execVM "zeusAssignment.sqf";
 };
 diag_log "init end";
