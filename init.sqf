@@ -9,10 +9,10 @@ player addAction[
 	false,
 	true,
 	"",
-	_this == (vehicle _target) && {
+	"_this == (vehicle _target) && {
 		(count nearestObjects[_target, ['landVehicle'], 5]) > 0 && {
 			(vectorUp cursorTarget) select 2 < 0
-		}
+		}"
 	}
 ];
 /// XXX: Restart flip script on respawn
@@ -30,6 +30,5 @@ Player AddEventHandler[
 		];
 	}];
 execVM "alive\CustomFactions.sqf";
-execVM "zeusAssignment.sqf";
 };
 diag_log "init end";
