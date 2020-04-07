@@ -6,7 +6,7 @@
 dev = "Your friends in the 7th Cav!";
 author = "Your friends in the 7th Cav!";
 
-onLoadName = "BlackRock's Rising Storms V 1.0";
+onLoadName = "BlackRock V 1.0";
 onLoadMission = "Operation Lingor Freedom";
 onLoadIntro = "Operation Lingor Freedom";
 
